@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="css/type_content.css">
+
+	<div class="type_content_left" id="type_content_left">
+		<div>
+			<ul>
+				<li ng-repeat="info in list" ui-sref-active="type_leftlist_high"><a ui-sref="index.type.type.{{ info.title }}">{{ info.name }}</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="type_content_right" ui-view>
+		
+	</div>
+
+<script src="../../../lib/zepto.min.js"></script>
+<script src="../../../lib/iscroll5.js"></script>
+<script>
+	var left = new IScroll("#type_content_left");
+</script>

@@ -1,0 +1,25 @@
+.type_content_left::-webkit-scrollbar{
+		width: 0;
+		height: 0;
+	}
+.type_content_left{
+	background: #f2f2f2;
+	width: 2.1rem;
+	overflow-y: auto;
+	ul{
+		width: 100%;
+		li{
+			line-height: 1.3rem;
+			text-align: center;
+			border-bottom: 0.06rem solid #fff;
+			a{
+				color: #646464;
+			}
+		}
+	}
+}
+.type_content_right{
+	-webkit-flex: 1;
+}
+	
+

@@ -1,0 +1,225 @@
+*{
+	padding: 0; 
+	margin: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #515151;
+}
+li{
+	list-style: none;
+}
+html,body,#box{
+	width: 100%;
+	height: 100%;
+	font-size: 0.32rem;
+}
+%posr{
+	position: relative;
+}
+%posa{
+	position: absolute;
+}
+.on{
+	i{
+		color: #f18101;
+	}
+	b{
+		font-size: 0.28rem;
+		color: #f18101;
+	}
+}
+.home_li_high{
+	border-bottom: 3px solid #f07402;
+	a{
+		color: #febb52;
+	}
+}
+.type_li_high{
+	a{
+	border-bottom: 5px solid #f27d03;
+		color: #e6b705;
+	}
+}
+.type_leftlist_high{
+	background: #fff;
+}
+.ship_li_high{
+	a{
+		color: #e17e11;
+		border-bottom: 5px solid #ec8401;
+	}
+}
+/*-----------------quanju---------------------------------
+***********************************************************
+***********************************************************
+***********************************************************
+*/
+
+#box{
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+}
+
+/*-----------------main---------------------------------
+***********************************************************
+***********************************************************
+***********************************************************
+*/
+.main{
+	overflow: hidden;
+	width: 100%;
+	-webkit-flex: 1;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	/******************************home*********************************/
+	.home-header{
+		width: 100%;
+		height: 0.9rem;
+		background: #ccc;
+		text-align: center;
+	}
+	.home-content-head::-webkit-scrollbar{
+		width: 0;
+		height: 0;
+	}
+	.home-content-head{
+		width: 100%;
+		overflow: auto;
+		height: 0.7rem;
+		line-height: 0.7rem;
+		//width: 120%;
+		text-align: center;
+		ul{
+			width: 120%;
+			height: 0.7rem;
+			display: -webkit-flex;
+			padding-left: 0.4rem;
+			li{
+				height: 0.7rem;
+				text-align: center;
+				font-size: 0.28rem;
+				margin-right: 0.47rem;
+				a{
+					//color: #515151;
+				}
+			}
+		}
+	}
+	.home_content_con{
+		width: 100%;
+		-webkit-flex: 1;
+		overflow-y: auto;
+	}
+	/******************************type*********************************/
+	.type_header{
+		width: 100%;
+		height: 1rem;
+		background: #ccc;
+		text-align: center;
+		border-bottom: 1px solid #f4f4f4;
+	}
+	.type_content{
+		width: 100%;
+		-webkit-flex: 1;
+		display: -webkit-flex;
+		-webkit-flex-direction: column;
+		
+		.type_content_head{
+			width: 100%;
+			height: 0.7rem;
+			line-height: 0.73rem;
+			text-align: center;
+			padding: 0 0.17rem;
+			margin-bottom: 0.15rem;
+			ul{
+				display: -webkit-flex;
+				li{
+					-webkit-flex: 1;
+					text-align: center;
+					font-size: 0.34rem;
+					a{
+						//color: #515151;
+					}
+				}
+			}
+		}
+		.type_content_con{
+			width: 100%;
+			display: -webkit-flex;
+			-webkit-flex: 1;
+		}
+	}
+	/******************************ship*********************************/
+	.ship_content{
+		width: 100%;
+		-webkit-flex: 1;
+		display: -webkit-flex;
+		-webkit-flex-direction: column;
+		.ship_title{
+			width: 100%;
+			display: -webkit-flex;
+			height: 1rem;
+			line-height: 1rem;
+			li{
+				-webkit-flex: 1;
+				text-align: center;
+				font-size: 0.34rem;
+				a{
+					//color: #000;
+					display: inline-block;
+					width: 1.05rem;
+					height: 100%;
+					text-align: center;
+					font-size: 0.3rem;
+				}
+			}
+			.ship_title_left{
+				text-align: right;
+			}
+			.ship_title_right{
+				text-align: left;
+				margin-left: 0.26rem;
+			}
+		}
+		.ship_content_con{
+			-webkit-flex: 1;
+		}
+	}
+}
+
+
+
+	/*-----------------footer---------------------------------
+***********************************************************
+***********************************************************
+***********************************************************
+*/
+footer{
+	padding-top: 0.1rem;
+	width: 100%;	
+	height: 1rem;
+	display: flex;
+	background: #fff;
+	border-top: 2px solid #efefef;
+	i{
+			color: #302e33;
+			font-size: 0.4rem;
+		}
+	span{
+		-webkit-flex: 1;
+		text-align: center;
+		line-height: 0.4rem;
+		color: #797979;
+		width: 18%;
+		b{
+			font-style: normal;
+			font-size: 0.22rem;
+			color: #9f9a97;
+			font-weight: 100;
+		}
+		
+	}
+}
+
